@@ -3,6 +3,8 @@ import os
 import sys
 
 if __name__ == "__main__":
+    # 장고가 돌아가고 있는 환경에서 ./manage.py 를 실행되면 아래 코드가 실행 됨
+
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
     try:
         from django.core.management import execute_from_command_line

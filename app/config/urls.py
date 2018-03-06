@@ -24,6 +24,7 @@ urlpatterns = [
     # re_path(r'media/(?P<path>.*)$', serve_media),
 ]
 # 디버그가 Flase일때는 동작이 되지 않음
+# static 역시 디버그에서만 작동함
 urlpatterns += static(
     settings.MEDIA_URL,
     document_root=settings.MEDIA_ROOT
