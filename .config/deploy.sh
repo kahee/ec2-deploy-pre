@@ -1,7 +1,6 @@
 # 그환경에 있는  bash를 사용해라
 #!/usr/bin/env bash
-
-
+export DJANGO_SETTINGS_MODULE=config.settings.dev
 # Nginx에 존재하던 모든 enabled서버 설정 링크 삭제
 sudo rm -rf /ect/nginx/sites-enabled/*
 # 프로젝트의 Nginx 설정 (nginx-app.conf)
