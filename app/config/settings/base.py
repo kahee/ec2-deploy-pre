@@ -11,9 +11,11 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 import json
 import os
-import raven
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import raven as raven
+
 BASE_DIR_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(BASE_DIR_DIR)
 ROOT_DIR = os.path.dirname(BASE_DIR)
@@ -35,7 +37,8 @@ STATICFILES_DIRS = [
 SECRET_DIR = os.path.join(ROOT_DIR, '.secrets')
 SECRET_BASE = os.path.join(SECRET_DIR, 'base.json')
 SECRET_LOCAL = os.path.join(SECRET_DIR, 'local.json')
-SECRET_DEV = os.path.join(SECRET_DIR,'dev.json')
+SECRET_DEV = os.path.join(SECRET_DIR, 'dev.json')
+SECRET_PRODUCTION = os.path.join(SECRET_DIR, 'production.json')
 
 # # base.json 파일을 읽어온 결과를 파이썬 객체로 변환
 secrets_base = json.loads(open(SECRET_BASE, 'rt').read())
