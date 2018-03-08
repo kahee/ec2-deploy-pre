@@ -44,6 +44,16 @@ SECRET_PRODUCTION = os.path.join(SECRET_DIR, 'production.json')
 secrets_base = json.loads(open(SECRET_BASE, 'rt').read())
 print(secrets_base)
 
+# aws
+AWS_ACCESS_KEY_ID = secrets_base["AWS_ACCESS_KEY_ID"]
+AWS_SECRET_ACCESS_KEY = secrets_base["AWS_SECRET_ACCESS_KEY"]
+AWS_STORAGE_BUCKET_NAME = secrets_base["AWS_STORAGE_BUCKET_NAME"]
+
+# 다른 사람이 내 주소로 왔을 때 읽기권한이 없게끔 설정하는 것
+AWS_DEFAULT_ACL = 'private'
+AWS_S3_REGION_NAME = 'ap-northeast-2'
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -61,6 +71,7 @@ INSTALLED_APPS = [
 
     'raven.contrib.django.raven_compat',
     'django_extensions',
+    'storages',
 
     'photos',
 ]
@@ -93,7 +104,6 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'config.wsgi.application'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
