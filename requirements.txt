@@ -1,34 +1,36 @@
-awscli==1.14.50
-boto3==1.6.3
-botocore==1.9.3
-colorama==0.3.7
-decorator==4.2.1
-Django==2.0.2
-django-extensions==2.0.0
-django-storages==1.6.5
-docutils==0.14
-ipython==6.2.1
-ipython-genutils==0.2.0
-jedi==0.11.1
-jmespath==0.9.3
-parso==0.1.1
-pexpect==4.4.0
-pickleshare==0.7.4
-Pillow==5.0.0
-prompt-toolkit==1.0.15
-psycopg2-binary==2.7.4
-ptyprocess==0.5.2
-pyasn1==0.4.2
-Pygments==2.2.0
-python-dateutil==2.6.1
-pytz==2018.3
-PyYAML==3.12
-raven==6.6.0
-rsa==3.4.2
-s3transfer==0.1.13
-simplegeneric==0.8.1
-six==1.11.0
-traitlets==4.3.2
-typing==3.6.4
-uWSGI==2.0.17
-wcwidth==0.1.7
+Requirement already satisfied: freeze in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages
+Requirement already satisfied: awscli==1.14.50 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 1))
+Requirement already satisfied: boto3==1.6.3 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 2))
+Requirement already satisfied: botocore==1.9.3 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 3))
+Requirement already satisfied: colorama==0.3.7 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 4))
+Requirement already satisfied: decorator==4.2.1 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 5))
+Requirement already satisfied: Django==2.0.2 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 6))
+Requirement already satisfied: django-extensions==2.0.0 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 7))
+Requirement already satisfied: django-storages==1.6.5 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 8))
+Requirement already satisfied: docutils==0.14 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 9))
+Requirement already satisfied: ipython==6.2.1 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 10))
+Requirement already satisfied: ipython-genutils==0.2.0 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 11))
+Requirement already satisfied: jedi==0.11.1 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 12))
+Requirement already satisfied: jmespath==0.9.3 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 13))
+Requirement already satisfied: parso==0.1.1 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 14))
+Requirement already satisfied: pexpect==4.4.0 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 15))
+Requirement already satisfied: pickleshare==0.7.4 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 16))
+Requirement already satisfied: Pillow==5.0.0 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 17))
+Requirement already satisfied: prompt-toolkit==1.0.15 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 18))
+Requirement already satisfied: psycopg2-binary==2.7.4 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 19))
+Requirement already satisfied: ptyprocess==0.5.2 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 20))
+Requirement already satisfied: pyasn1==0.4.2 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 21))
+Requirement already satisfied: Pygments==2.2.0 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 22))
+Requirement already satisfied: python-dateutil==2.6.1 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 23))
+Requirement already satisfied: pytz==2018.3 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 24))
+Requirement already satisfied: PyYAML==3.12 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 25))
+Requirement already satisfied: raven==6.6.0 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 26))
+Requirement already satisfied: rsa==3.4.2 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 27))
+Requirement already satisfied: s3transfer==0.1.13 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 28))
+Requirement already satisfied: simplegeneric==0.8.1 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 29))
+Requirement already satisfied: six==1.11.0 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 30))
+Requirement already satisfied: traitlets==4.3.2 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 31))
+Requirement already satisfied: typing==3.6.4 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 32))
+Requirement already satisfied: uWSGI==2.0.17 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 33))
+Requirement already satisfied: wcwidth==0.1.7 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from -r /srv/ec2-deploy/requirements.txt (line 34))
+Requirement already satisfied: setuptools>=18.5 in ./.pyenv/versions/3.6.4/envs/fc-ec2-deploy/lib/python3.6/site-packages (from ipython==6.2.1->-r /srv/ec2-deploy/requirements.txt (line 10))

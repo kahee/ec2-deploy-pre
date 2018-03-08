@@ -1,12 +1,13 @@
 from django.db import models
 
 # Create your models here.
-from django.db.models.signals import pre_delete, post_delete
+from django.db.models.signals import post_delete
 from django.dispatch import receiver
 
 
 class Photo(models.Model):
     file = models.ImageField(upload_to='photo', blank=True)
+
 
 # signal 을 받음
 # receiver connect 여러개 받으려면 리스트로
@@ -18,3 +19,4 @@ def photo_delete(sender, instance, **kwargs):
     # sender - 모델 객체가 옴
     # instance - 시그널이 발생된 모델 인스턴스가 온다.
     instance.file.delete(False)
+
